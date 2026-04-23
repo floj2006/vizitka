@@ -210,7 +210,9 @@ export default function App() {
     } catch (error) {
       setSubmitState("error");
       setSubmitError(
-        error instanceof Error ? error.message : "Не удалось отправить ответ. Попробуйте ещё раз."
+        error instanceof Error
+          ? error.message
+          : "Не удалось связаться с формой. Запустите сайт через npm run dev и проверьте настройки Telegram."
       );
     }
   }
@@ -450,10 +452,6 @@ export default function App() {
                 </div>
               ) : (
                 <form className="rsvp__form" onSubmit={handleSubmit}>
-                  <p className="rsvp__delivery">
-                    После отправки ответ сразу уйдёт жениху в Telegram.
-                  </p>
-
                   <label className="rsvp__field">
                     <span>Ваше имя</span>
                     <input

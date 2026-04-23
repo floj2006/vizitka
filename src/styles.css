@@ -947,15 +947,10 @@ select {
   gap: 1rem;
 }
 
-.rsvp__delivery,
 .rsvp__status {
   margin: 0;
   font-size: 0.88rem;
   line-height: 1.7;
-}
-
-.rsvp__delivery {
-  color: var(--ink-soft);
 }
 
 .rsvp__status--error {
