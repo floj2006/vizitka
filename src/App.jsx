@@ -43,7 +43,7 @@ const swatches = [
 ];
 
 const attendanceOptions = [
-  { value: "yes", label: "С радостью буду" },
+  { value: "yes", label: "С радостью приду" },
   { value: "pair", label: "Буду с парой" },
   { value: "no", label: "К сожалению, не смогу" },
 ];
@@ -431,8 +431,9 @@ export default function App() {
                   <HeartIcon className="rsvp__thanksIcon" />
                   <h3>Спасибо</h3>
                   <p>
-                    Нам очень приятно. {formState.name || "Ваш"} ответ согрел нас ещё до
-                    самого праздника.
+                    {formState.name
+                      ? `Нам очень приятно, ${formState.name}. Ваш ответ согрел нас ещё до самого праздника.`
+                      : "Нам очень приятно. Ваш ответ согрел нас ещё до самого праздника."}
                   </p>
                   <p className="rsvp__summary">{attendanceText}</p>
                   {formState.attendance === "pair" && formState.companion ? (
