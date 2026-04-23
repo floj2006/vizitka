@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alina Andrey Wedding//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:alina-andrey-wedding-20260814@invite.local
+DTSTAMP:20260423T000000Z
+DTSTART:20260814T130000Z
+DTEND:20260814T200000Z
+SUMMARY:Свадьба Алины и Андрея
+DESCRIPTION:11:40 регистрация брака\\n13:00 фотосессия молодоженов\\n16:00 сбор гостей, фуршет\\n17:00 банкет\\n23:00 окончание вечера
+LOCATION:Ресторан «Кролик в шляпе», д. Янино-2, Красногорская улица, 19
+URL:https://yandex.ru/maps/-/CPCdy29j
+END:VEVENT
+END:VCALENDAR
